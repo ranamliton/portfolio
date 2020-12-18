@@ -61,10 +61,10 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 45px;
-    font-weight: 800;
-    margin-bottom: 80px;
-    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 section .title::before{
@@ -435,41 +435,6 @@ section .title::after{
     background: rgb(241, 63, 131);
 }
 
-/* blogs */
-.project-card{
-    background-color: #070708;
-    box-shadow: 10px 8px 42px #adabab;
-    overflow: hidden;
-}
-.project-card img {
-    border: 5px solid rgb(5, 141, 96);;
-    max-width: 100%;
-    width: auto;
-
-  display: block;
-    transition: all .8s ease-in-out;
-    overflow: hidden;
-}
-.project-card:hover img{
-    transform: scale(1.1);
-}
-.project-card a:hover{
-    color: #070708!important;
-}
-.project-card p,h5{
-    color:black;
-
-}
-.card-footer {
-    border-top: 2px solid #191919;
-}
-.project-card{    
-    box-shadow: 0 5px 5px #7a7a7a26;
-    transition: all .3s ease;
-}
-.card-title{
-    color:black;
-}
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
