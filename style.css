@@ -347,7 +347,7 @@ section .title::after{
 .card-title{
     color:black;
 }
-/* skills section styling */
+/* skidlls section styling */
 
 .skills .title::after{
     content: "what i know";
