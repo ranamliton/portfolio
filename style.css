@@ -87,10 +87,6 @@ section .title::after{
     transition: all 0.3s ease;
     background: rgb(5, 141, 96);
 }
-.navbar1.sticky{
-    padding: 15px 0;
-    background: crimson;
-}
 .navbar1 .max-width{
     display: flex;
     align-items: center;
