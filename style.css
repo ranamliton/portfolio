@@ -38,7 +38,7 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.publications .project-content,
+.publications .publication-content,
 .skills .skills-content,
 .blogs .blogs-content,
 .contact .contact-content{
@@ -258,12 +258,12 @@ section .title::after{
     background: #111;
     content: "what i've done";
 }
-.project-content{
+.publication-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.project-card{
+.publication-card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -274,16 +274,16 @@ section .title::after{
     margin-bottom: 20px;
     overflow: hidden;
 }
-.project-card:hover{
+.publication-card:hover{
     background: rgb(5, 141, 96);
 }
-.project-card .box{
+.publication-card .box{
     transition: all 0.3s ease;
 }
-.project-card:hover .box{
+.publication-card:hover .box{
     transform: scale(1.05);
 }
-.project-card img{
+.publication-card img{
     border: 5px solid rgb(5, 141, 96);
     max-width: 100%;
     width: auto;
@@ -292,21 +292,21 @@ section .title::after{
     border-radius: 6px;
     margin-bottom: 15px;
 }
-.project-card:hover img{
+.publication-card:hover img{
     border-color: #fff;
 }
-.project-card .text{
+.publication-card .text{
     font-size: 20px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     color: #fff;
 }
-.project-card p{
+.publication-card p{
     color: #ccc;
     font-size: 14px;
     margin-bottom: 15px;
 }
-.project-card .card-footer .btn{
+.publication-card .card-footer .btn{
     display: inline-block;
     background: rgb(5, 141, 96);
     color: #fff;
@@ -317,7 +317,7 @@ section .title::after{
     border: 2px solid rgb(5, 141, 96);
     transition: all 0.3s ease;
 }
-.project-card .card-footer .btn:hover{
+.publication-card .card-footer .btn:hover{
     color: rgb(5, 141, 96);
     background: none;
 }
@@ -766,7 +766,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .project-card,
+    .publication-card,
     .blog-card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -794,7 +794,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .project-card,
+    .publication-card,
     .blog-card{
         width: 100%;
     }
