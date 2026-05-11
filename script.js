@@ -70,3 +70,70 @@ $(document).ready(function(){
         }
     });
 });
+
+// publication carousel slider
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+
+    if(track && prevBtn && nextBtn){
+        let currentIndex = 0;
+
+        function getCardsPerView(){
+            if(window.innerWidth <= 690) return 1;
+            if(window.innerWidth <= 947) return 2;
+            return 3;
+        }
+
+        function getTotalCards(){
+            return track.children.length;
+        }
+
+        function updateCarousel(){
+            const cardsPerView = getCardsPerView();
+            const totalCards = getTotalCards();
+            const cardWidth = track.children[0].offsetWidth;
+            const gap = 25;
+            const maxIndex = Math.max(0, totalCards - cardsPerView);
+
+            // Clamp currentIndex
+            if(currentIndex > maxIndex) currentIndex = maxIndex;
+            if(currentIndex < 0) currentIndex = 0;
+
+            const translateX = -(currentIndex * (cardWidth + gap));
+            track.style.transform = `translateX(${translateX}px)`;
+
+            // Update button states
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex >= maxIndex;
+
+            prevBtn.style.opacity = currentIndex === 0 ? '0.3' : '1';
+            nextBtn.style.opacity = currentIndex >= maxIndex ? '0.3' : '1';
+        }
+
+        prevBtn.addEventListener('click', function(){
+            if(currentIndex > 0){
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', function(){
+            const cardsPerView = getCardsPerView();
+            const totalCards = getTotalCards();
+            const maxIndex = Math.max(0, totalCards - cardsPerView);
+            if(currentIndex < maxIndex){
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        // Update on window resize
+        window.addEventListener('resize', function(){
+            updateCarousel();
+        });
+
+        // Initial setup
+        updateCarousel();
+    }
+});
