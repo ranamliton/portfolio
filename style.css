@@ -247,21 +247,35 @@ section .title::after{
 }
 
 /* publications section styling */
-.publications{
+.publications, .publications{
     color: #fff;
     background: #111;
 }
+.publications .title::before,
 .publications .title::before{
     background: #fff;
 }
+.publications .title::after,
 .publications .title::after{
     background: #111;
     content: "what i've done";
 }
-.publication-content{
+/* Carousel wrapper */
+.carousel-wrapper{
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.carousel-container{
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+}
+.carousel-track{
+    display: flex;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out;
 }
 .publication-card{
     width: calc(33% - 20px);
@@ -320,6 +334,35 @@ section .title::after{
 .publication-card .card-footer .btn:hover{
     color: rgb(5, 141, 96);
     background: none;
+}
+/* Carousel arrows */
+.carousel-arrow{
+    background: rgb(5, 141, 96);
+    color: #fff;
+    border: 2px solid rgb(5, 141, 96);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    z-index: 10;
+}
+.carousel-arrow:hover{
+    background: none;
+    color: rgb(5, 141, 96);
+}
+.carousel-arrow:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.carousel-arrow:disabled:hover{
+    background: rgb(5, 141, 96);
+    color: #fff;
 }
 
 /* skills section styling */
