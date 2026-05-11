@@ -34,11 +34,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projects, .skills, .blogs, .contact, footer{
+.about, .publications, .skills, .blogs, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.projects .project-content,
+.publications .project-content,
 .skills .skills-content,
 .blogs .blogs-content,
 .contact .contact-content{
@@ -246,15 +246,15 @@ section .title::after{
     background: none;
 }
 
-/* projects section styling */
-.projects{
+/* publications section styling */
+.publications{
     color: #fff;
     background: #111;
 }
-.projects .title::before{
+.publications .title::before{
     background: #fff;
 }
-.projects .title::after{
+.publications .title::after{
     background: #111;
     content: "what i've done";
 }
