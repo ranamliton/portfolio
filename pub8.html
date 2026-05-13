@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational SNP Analysis and Molecular Simulation Revealed the Most Deleterious Missense Variants in the NBD1 Domain of Human ABCA1 Transporter | Liton Rana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar1">
+        <div class="max-width">
+            <div class="logo"><a href="index.html"><span class="logo-part1">Portfo</span><span class="logo-part2">lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html#home" class="menu-btn">Home</a></li>
+                <li><a href="index.html#about" class="menu-btn">About</a></li>
+                <li><a href="index.html#education" class="menu-btn">Education</a></li>
+                <li><a href="index.html#publications" class="menu-btn">Publications</a></li>
+                <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
+                <li><a href="index.html#blogs" class="menu-btn">Blogs</a></li>
+                <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="subpage-header">
+        <div class="max-width">
+            <div class="subpage-content">
+                <h1>Computational SNP Analysis and Molecular Simulation Revealed the Most Deleterious Missense Variants in the NBD1 Domain of Human ABCA1 Transporter</h1>
+                <p class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#publications">Publications</a> / Publication Details</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="subpage-body">
+        <div class="max-width">
+            <div class="subpage-grid">
+                <div class="subpage-main">
+                    <img src="images/pub8.jpg" alt="ABCA1 Transporter Study" class="subpage-img">
+
+                    <h2>Overview</h2>
+                    <p>This study employed an integrated computational approach consisting of nine well-known in silico tools and molecular dynamics (MD) simulation to identify damaging SNPs in the ATP-binding cassette transporter A1 (ABCA1) gene. The research identified G1050V and S1067C as two potential deleterious nsSNPs located in the NBD1 domain that disrupt conformational flexibility and alter the structural organization of the ATP binding site, with implications for Tangier disease, atherosclerosis, and coronary heart disease.</p>
+
+                    <h2>Introduction</h2>
+                    <p>The ATP-binding cassette transporter A1 (ABCA1) is a 220 kDa exporter protein from the ABC family, expressed in diverse tissues including peripheral blood leukocytes, intestine, liver, adrenal glands, macrophages, and lungs. The expressing gene spans over 150 kb on chromosome 9q22-q31 and contains about 50 exons and 49 introns.</p>
+                    <p>ABCA1 plays a critical role in reverse cholesterol transport by HDL biogenesis, exporting cholesterol and phospholipids to load up in lipid-poor ApoA-I and ApoE, enabling formation of nascent HDL. Reduced ABCA1 activity causes cholesteryl ester accumulation and enhances rapid catabolism of poorly lipidated ApoA-I.</p>
+                    <p>About 97 mutations have been found in the ABCA1 gene, many linked with Tangier disease (TD), which increases the risk of coronary heart disease. Variations in ABCA1 also enhance risks of atherosclerosis, ischemic stroke, type II diabetes, myocardial infarction, familial hypercholesterolaemia, cancer, Alzheimer's disease, and macular degeneration.</p>
+                    <p>Despite ample evidence supporting the role of ABCA1 variants in age-associated disorders, there is a lack of information on non-synonymous polymorphisms (nsSNPs) effects on ABCA1 structure and function. This study aimed to explore the structural and functional consequences of nsSNPs in ABCA1 using bioinformatics-based screening together with MD simulation.</p>
+
+                    <h2>Study Design and Methodology</h2>
+                    <p>The study employed a comprehensive computational pipeline:</p>
+                    <ul>
+                        <li><strong>Data Retrieval:</strong> 1,421 missense SNPs retrieved from NCBI dbSNP database</li>
+                        <li><strong>In Silico Prediction:</strong> Nine deleterious SNP predictors used (SIFT, PolyPhen-2 HumDiv/HumVar, PROVEAN, I-Mutant 3.0, PhD-SNP, SNP & GO, PANTHER, PredictSNP, MAPP)</li>
+                        <li><strong>Conservation Analysis:</strong> ConSurf tool analyzed evolutionary conservation</li>
+                        <li><strong>MD Simulation:</strong> 300 ns simulations for wild-type and variants (G1050V, S1067C) using YASARA Dynamics with AMBER14 force field</li>
+                        <li><strong>Structural Analysis:</strong> RMSD, Rg, RMSF, DCCM, PCA, residue network analysis, and free energy landscapes</li>
+                    </ul>
+
+                    <h2>Key Findings</h2>
+                    <h3>Identification of Most Deleterious nsSNPs</h3>
+                    <p>Cumulative analysis from all nine tools revealed four highly deleterious nsSNPs:</p>
+                    <ul>
+                        <li><strong>S741C:</strong> Most damaging (p = 1.0 × 10<sup>−90</sup>)</li>
+                        <li><strong>Y793C:</strong> Highly damaging</li>
+                        <li><strong>G1050V:</strong> Highly damaging, located in NBD1 domain</li>
+                        <li><strong>S1067C:</strong> Highly damaging, located in NBD1 domain</li>
+                    </ul>
+                    <p>G1050V and S1067C were identified as highly conserved (score 8–9) with functional importance. G1050 is exposed to solvent, while S1067 is buried in the protein structure.</p>
+
+                    <h3>Molecular Dynamics Simulation Results</h3>
+                    <p>300 ns MD simulations revealed significant structural impacts:</p>
+                    <ul>
+                        <li><strong>Conformational Stability:</strong> G1050V induced protein compactness (lower Rg), while S1067C induced flexibility</li>
+                        <li><strong>Hydrogen Bonds:</strong> G1050V showed lower H-bond distribution, indicating reduced stability</li>
+                        <li><strong>Solvent Accessibility:</strong> Both variants decreased SASA, indicating decreased protein folding</li>
+                        <li><strong>Residual Fluctuations:</strong> G1050V caused highest fluctuations in regions 950–968 and H loop; S1067C induced highest fluctuation in LSGGQ loop</li>
+                        <li><strong>Correlated Motions:</strong> DCCM analysis showed substantial differences between wild-type and variants, with most correlated motions changing to random or anticorrelated</li>
+                        <li><strong>Principal Component Analysis:</strong> G1050V increased protein motion (92% variance in first PC), while wild-type showed more scattered distribution</li>
+                    </ul>
+
+                    <h3>Effects on Signature Motifs</h3>
+                    <p>The NBD1 domain contains six major signature motifs critical for ATP binding and hydrolysis:</p>
+                    <ul>
+                        <li><strong>Walker A and B motifs:</strong> G1050V induced random motion and reduced dynamics; S1067C reduced dynamics and introduced turn/bend conformations</li>
+                        <li><strong>LSGGQ motif:</strong> S1067C caused highest fluctuation by introducing bend and turn conformation; G1050V caused more A-helix formation</li>
+                        <li><strong>Q/D/H loops:</strong> Both variants disrupted the plasticity required for ATP binding</li>
+                    </ul>
+
+                    <h3>Free Energy Landscape Analysis</h3>
+                    <p>FEL analysis revealed distinct conformational dynamics:</p>
+                    <ul>
+                        <li><strong>Wild-type:</strong> Basin split into two energy minima, concentrated and centralized, representing stability</li>
+                        <li><strong>G1050V:</strong> Single energy minimum, more dispersed, suggesting less conformational dynamics</li>
+                        <li><strong>S1067C:</strong> Single energy minimum, less concentrated than wild-type, indicating altered stability</li>
+                    </ul>
+
+                    <h2>Implications and Significance</h2>
+                    <p>This computational study has important implications for understanding ABCA1-related diseases:</p>
+                    <ul>
+                        <li><strong>Disease Mechanism:</strong> G1050V and S1067C disrupt NBD1 conformational flexibility and alter ATP binding site organization, potentially causing loss of ABCA1 function</li>
+                        <li><strong>Therapeutic Strategy:</strong> Patients with defective ABCA1 variants may require HDL-enhancing drugs other than those targeting ABCA1</li>
+                        <li><strong>Drug Design:</strong> Findings provide a starting point for investigating structural influences in designing rational drugs considering deleterious variants</li>
+                        <li><strong>Population Genetics:</strong> The prevalence of these mutations among different geographical locations needs further investigation</li>
+                        <li><strong>Clinical Correlation:</strong> Clinical evidence relating to these variants needs exploration to validate this investigation</li>
+                    </ul>
+
+                    <h2>Conclusion</h2>
+                    <p>Using several in silico deleterious SNP predictors and MD simulation, this study identified G1050V and S1067C as two potential deleterious nsSNPs in the NBD1 domain of ABCA1. Both variants were found to disrupt the overall conformational dynamics of the NBD1 domain and the plasticity of the active site by causing significant structural alterations in the ATP binding motifs, potentially responsible for the loss of ATP binding. These SNPs can be considered important candidates for analyzing their phenotype occurrence in diseases associated with ABCA1 loss of function, including Tangier disease, atherosclerosis, and coronary heart disease.</p>
+
+                    <div class="subpage-nav">
+                        <a href="pub7.html" class="btn-back"><i class="fas fa-arrow-left"></i> Previous Publication</a>
+                        <a href="index.html#publications" class="btn-next">Back to Publications <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <aside class="subpage-sidebar">
+                    <div class="sidebar-box">
+                        <h3>Project Info</h3>
+                        <ul class="sidebar-list">
+                            <li><i class="fas fa-calendar"></i> <strong>Published:</strong> October 14, 2020</li>
+                            <li><i class="fas fa-user"></i> <strong>Role:</strong> Co-Author</li>
+                            <li><i class="fas fa-university"></i> <strong>Institution:</strong> Islamic University, Bangladesh / Dongguk University, Korea</li>
+                            <li><i class="fas fa-book"></i> <strong>Type:</strong> Research Article</li>
+                            <li><i class="fas fa-flask"></i> <strong>Journal:</strong> International Journal of Molecular Sciences </li>
+                            <li><i class="fas fa-chart-line"></i> <strong>IF:</strong> 4.9</li>
+                            <li><i class="fas fa-dna"></i> <strong>Volume:</strong> 21(20), 7606</li>
+                            <li><i class="fas fa-link"></i> <strong>DOI:</strong> <a href="https://doi.org/10.3390/ijms21207606" target="_blank">10.3390/ijms21207606</a></li>
+                            <li><i class="fas fa-creative-commons"></i> <strong>License:</strong> CC BY 4.0 Open Access</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-box">
+                        <h3>Related Projects</h3>
+                        <ul class="sidebar-links">
+                            <li><a href="pub_plosone_soil.html">Soil Microbiomes</a></li>
+                            <li><a href="pub_frontiers_ecoli.html">ESBL <em>E. coli</em> Genomics</a></li>
+                            <li><a href="pub_antibiotics_fish.html"><em>E. faecalis</em> in Fish</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-box">
+                        <h3>Authors</h3>
+                        <ul class="sidebar-list">
+                            <li><i class="fas fa-user"></i> Raju Dash (First Author)</li>
+                            <li><i class="fas fa-user"></i> Md. Chayan Ali</li>
+                            <li><i class="fas fa-user"></i> <strong>Md. Liton Rana</strong></li>
+                            <li><i class="fas fa-user"></i> Yeasmin Akter Munni</li>
+                            <li><i class="fas fa-user"></i> Il Soo Moon (Corresponding)</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-box">
+                        <h3>Funding</h3>
+                        <p style="font-size: 0.9em; color: #666;">This research was supported by the Basic Science Research Program through the National Research Foundation of Korea (NRF-2018R1A2B6002232) and a WISET Grant funded by the Ministry of Science and ICT (WISET-2019-491).</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <span>Created By <a href="index.html">Liton Rana</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+            <div class="social-icons">
+                <a href="https://facebook.com/ranamliton" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.researchgate.net/profile/Md-Liton-Rana?ev=hdr_xprf" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                <a href="https://scholar.google.com/citations?user=O_AzXGkAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://twitter.com/ranamliton/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com/in/ranamliton/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/ranamliton" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/ranamliton?" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
